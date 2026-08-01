@@ -1,8 +1,28 @@
 aid: play-versus
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/play-versus.png
 name: Play Versus
-description: Play Versus is a company surfaced as a portfolio company of battery-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Play Versus (PlayVS) is North America's leading scholastic and collegiate
+  esports platform, operating competitive gaming leagues for middle schools,
+  high schools, and colleges alongside an esports curriculum and college
+  recruitment services. The platform partners with major publishers including
+  Riot Games, EA, Blizzard, and Psyonix, and runs its competitions and rosters
+  through the app.playvs.com web application. PlayVS is a consumer/education
+  product and does not publish a public developer API, developer portal, or API
+  documentation surface; this profile captures its published identity, support,
+  and policy properties. It was surfaced as a portfolio company of Battery
+  Ventures and added to the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/play-versus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +32,46 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Esports
+- Gaming
+- Education
+- Scholastic
+- Competitions
+- EdTech
 apis: []
+common:
+- type: DomainSecurity
+  url: security/play-versus-domain-security.yml
+- type: Website
+  url: https://playvs.com
+- type: DeveloperPortal
+  url: https://app.playvs.com
+- type: Login
+  url: https://app.playvs.com/login
+- type: SignUp
+  url: https://app.playvs.com/signup
+- type: Support
+  url: https://help.playvs.com/en/
+- type: HelpCenter
+  url: https://help.playvs.com/en/
+- type: Blog
+  url: https://playvs.com/news/
+- type: PrivacyPolicy
+  url: https://playvs.com/privacy/
+- type: TermsOfService
+  url: https://playvs.com/terms/
+- type: GitHubOrganization
+  url: https://github.com/playvs
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
